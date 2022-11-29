@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name         = "RNPoetryDistanceStory"
-  s.version      = "1.0.2"
+  s.version      = "1.0.3"
   s.summary      = "RNPoetryDistanceStory"
   s.description  = <<-DESC
                   RNPoetryDistanceStory
@@ -17,10 +17,14 @@ Pod::Spec.new do |s|
 
 
   s.dependency "React"
-  s.dependency "React"
   s.dependency 'GCDWebServer', '~> 3.0'
   s.dependency 'GCDWebServer/WebUploader', '~> 3.0'
   s.dependency 'GCDWebServer/WebDAV', '~> 3.0'
+  s.dependency 'UMCommon'
+  s.dependency 'UMDevice'
+  s.dependency 'UMAPM'
+  s.dependency 'CocoaSecurity'
+  s.dependency 'JJException'
   #s.dependency "others"
 
 end
