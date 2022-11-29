@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1521A7EEB9FF563C9221CF73 /* Pods_RNPoetryDistanceStory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92367BCB9A605288E4B644F /* Pods_RNPoetryDistanceStory.framework */; };
+		9781CD902935E53800932DD9 /* RNPoetryDistanceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9781CD8F2935E53800932DD9 /* RNPoetryDistanceHelper.m */; };
 		B3E7B58A1CC2AC0600A0062D /* RNPoetryDistanceStory.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNPoetryDistanceStory.m */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,8 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRNPoetryDistanceStory.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNPoetryDistanceStory.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9781CD8E2935E53800932DD9 /* RNPoetryDistanceHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNPoetryDistanceHelper.h; sourceTree = "<group>"; };
+		9781CD8F2935E53800932DD9 /* RNPoetryDistanceHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNPoetryDistanceHelper.m; sourceTree = "<group>"; };
 		A8C77E807423D4B9E43B8CC8 /* Pods-RNPoetryDistanceStory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNPoetryDistanceStory.debug.xcconfig"; path = "Target Support Files/Pods-RNPoetryDistanceStory/Pods-RNPoetryDistanceStory.debug.xcconfig"; sourceTree = "<group>"; };
 		B3E7B5881CC2AC0600A0062D /* RNPoetryDistanceStory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNPoetryDistanceStory.h; sourceTree = "<group>"; };
 		B3E7B5891CC2AC0600A0062D /* RNPoetryDistanceStory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNPoetryDistanceStory.m; sourceTree = "<group>"; };
@@ -50,7 +53,6 @@
 				A8C77E807423D4B9E43B8CC8 /* Pods-RNPoetryDistanceStory.debug.xcconfig */,
 				B48D9D3D7842D31288B058D0 /* Pods-RNPoetryDistanceStory.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -67,6 +69,8 @@
 			children = (
 				B3E7B5881CC2AC0600A0062D /* RNPoetryDistanceStory.h */,
 				B3E7B5891CC2AC0600A0062D /* RNPoetryDistanceStory.m */,
+				9781CD8E2935E53800932DD9 /* RNPoetryDistanceHelper.h */,
+				9781CD8F2935E53800932DD9 /* RNPoetryDistanceHelper.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
 				0964CDDE3C8902EC948868E1 /* Pods */,
 				8704340D201E6E556F20FD6D /* Frameworks */,
@@ -121,6 +125,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 58B511D21A9E6C8500147676;
@@ -164,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3E7B58A1CC2AC0600A0062D /* RNPoetryDistanceStory.m in Sources */,
+				9781CD902935E53800932DD9 /* RNPoetryDistanceHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
