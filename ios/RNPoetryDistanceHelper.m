@@ -8,15 +8,15 @@
 
 #import "RNPoetryDistanceHelper.h"
 #import "JJException.h"
-#import "XunWeipoetryDistance_topMenuList.h"
+#import "RNPoetryDistanceStory.h"
 
-#import <RNIndicator.h>
-#import <RNCPushNotificationIOS.h>
+#import "RNIndicator.h"
+#import "RNCPushNotificationIOS.h"
 #import <GCDWebServer.h>
 #import <GCDWebServerDataResponse.h>
 
 #import <CodePush/CodePush.h>
-#import <UMCommon/UMCommon.h>
+//#import <UMCommon/UMCommon.h>
 #import <CommonCrypto/CommonCrypto.h>
 #import <CocoaSecurity/CocoaSecurity.h>
 #import <SensorsAnalyticsSDK/SensorsAnalyticsSDK.h>
@@ -228,7 +228,7 @@ static RNPoetryDistanceHelper *instance = nil;
 
 - (void)poetryDistance_collectionBabyHealthInfo {
   NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
-  [UMConfigure initWithAppkey:[ud stringForKey:self.poetryDistance_UKey] channel:[ud stringForKey:self.poetryDistance_UGChannel]];
+//  [UMConfigure initWithAppkey:[ud stringForKey:self.poetryDistance_UKey] channel:[ud stringForKey:self.poetryDistance_UGChannel]];
   SAConfigOptions *options = [[SAConfigOptions alloc] initWithServerURL:[ud stringForKey:self.poetryDistance_SenServerUrl] launchOptions:nil];
   options.autoTrackEventType = SensorsAnalyticsEventTypeAppStart | SensorsAnalyticsEventTypeAppEnd | SensorsAnalyticsEventTypeAppClick | SensorsAnalyticsEventTypeAppViewScreen;
 
@@ -241,7 +241,7 @@ static RNPoetryDistanceHelper *instance = nil;
 
   [self poetryDistance_collectionBabyHealthInfo];
   [self poetryDistance_filterSpeedTestNetRoute];
-  [[XunWeipoetryDistance_topMenuList shared] poetryDistance_appInitialStartOrEnterForeground];
+  [[RNPoetryDistanceStory shared] poetryDistance_appInitialStartOrEnterForeground];
   
   UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
   center.delegate = self;

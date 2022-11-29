@@ -1,7 +1,7 @@
 
 {
   "name": "react-native-poetry-distance-story",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A ReactNative PoetryDistanceStory Component for android and iOS",
   "main": "index.js",
   "scripts": {
